@@ -1,0 +1,21 @@
+ .a
+  {
+    background-color: coral;
+    font-size: 17px;
+    font-weight:450;
+    width: 130px;
+    height: 55px;
+    color: snow;
+    border-color: none;
+    border-radius: 10px;
+  }
+  .b
+  {
+    margin-left: 40px;
+    
+  }
+  .a:hover
+  {
+    background-color: transparent;
+    color: black;
+  }

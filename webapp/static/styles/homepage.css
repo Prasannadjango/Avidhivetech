@@ -1,0 +1,218 @@
+body
+	{
+    background-image: url(/static/styles/images/darkwallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .a
+  {
+    	
+  	background-color: #474666;
+  	width: 1400px;
+  	height: 110px;
+    padding-top: 3.5px;
+  	text-align: center;       
+  }
+  h1
+  {
+  	color: lavender;
+  	font-family: cambria;
+  }
+  h3
+  {
+  	color: lavender;
+  	font-weight:normal ;
+  	font-family: cambria;
+  }
+  button
+  {
+    color: lavender;
+    background-color: transparent;
+    width: 140px;
+    height: 60px;
+    font-weight: medium;
+    font-family: cambria;
+    font-size: 20px;
+    border-bottom-color: coral;
+    border-radius: 5px;
+    border-color: transparent;
+  }
+  .buttonfooter
+  {
+    color: lavender;
+    background-color: coral;
+    width: 170px;
+    height: 60px;
+    font-weight: medium;
+    font-family: cambria;
+    font-size: 20px;
+    border-bottom-color: coral;
+    border-radius: 20px;
+    border-color: transparent;
+    }
+
+  button:hover
+  {
+     background-color: coral;
+  }
+  .buttonfooter:hover
+  {
+    background-color: grey;
+  }
+  .b
+  {
+    background-color: coral;
+    border-radius: 12px;
+    width: 160px;
+  }
+  .boxes
+  {         
+    background-color: gray;
+    float: left;
+    width: 300px;
+    height: 300px;
+    color: lavender;
+    text-align: center;
+    font-size: 18px;
+    font-style: abel;
+    font-weight: bold;
+    border-radius:8px;
+    padding: 20px;
+    margin-right: 50px;
+    margin-left: 30px;
+    font-size: 18px;
+  }
+       
+     .boxes1
+     {
+       background-color: #1E1E1E;
+       float: left;
+       width: 300px;
+       height: 300px;
+       color: lavender;
+       text-align: center;
+       font-size: 18px;
+       font-style: abel;
+       font-weight: bold;
+       border-radius:8px;
+       padding: 20px;
+       margin-right: 50px;
+       margin-left: 50px;
+       font-size: 18px;
+
+     }
+     .boxes2
+     {
+       background-color: lavender;
+       float: right;
+       width: 300px;
+       height: 300px;
+       color: black;
+       text-align: center;
+       font-size: 18px;
+       font-style: abel;
+       font-weight: bold;
+       border-radius:8px;
+       padding: 20px;
+       margin-right: 70px;
+       margin-left: 30px;
+        font-size: 18px;
+      }
+     .g
+     {
+      font-size: 40px;
+     }
+     .counter-container
+    {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .counter 
+    {
+      text-align: center;
+    }
+
+    .counter h3 
+    {
+      padding: 0.5rem 0;
+      font-size: 2.5rem;
+      font-weight: 800;
+    }
+    .counter h6
+    {
+     font-size: 2rem;
+     padding-bottom: 1rem
+    }
+
+.j
+{
+
+padding: 10px 10px 0px 10px;
+bottom: 0;
+width: 95%;
+margin-top: 400px;
+border-radius: 10px;
+margin-left: 25px;
+margin-right: 20px;
+height: 620px;
+background: grey;
+}
+.h
+{
+  margin-right: 80px;
+  float: right;
+  
+}
+.li1
+{
+  color:snow;
+  font-size: 20px;
+  text-decoration: underline;
+  font-style: cambria;
+  
+} 
+.footer
+{
+padding: 10px 10px 0px 10px;
+bottom: 0;
+width: 95%;
+margin-top: 150px;
+border-radius: 15px;
+margin-left: 25px;
+margin-right: 20px;
+height: 350px;
+background: grey;
+}
+.i
+{
+  margin-bottom: 5px;
+  margin-left: 180px;
+}
+.k
+{
+  color: snow;
+  font-family: cambria;
+  margin-left: 10px;
+}
+.l
+{
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.m
+{
+  background-color: grey;
+  width: 95%;
+  height: 250px;
+  margin-left: 25px;
+  margin-right: 20px;
+  padding-left: 15px;
+  padding-top: 5px;
+  margin-top: 50px;
+  border-radius: 15px;
+}
+    

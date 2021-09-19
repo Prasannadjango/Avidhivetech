@@ -1,0 +1,95 @@
+body
+  {
+    background-image: url(/static/styles/images/login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .form
+  {
+    width: 60%;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, .8); 
+    height: 900px ;
+    margin-left: 250px;
+    margin-top: 50px;
+  }
+  h1
+  {
+    color: snow;
+    font-family: cambria;
+    padding-top: 40px;
+    text-align: center;
+  }
+  label
+  {
+    color: snow;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: cambria;
+    padding-left: 23px;
+  }
+  input[type=text]
+  {
+    height: 40px;
+    border-radius: 12px;
+    width: 700px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: snow;
+    background-color: transparent;
+    border-color:  coral;
+  }
+  input[type=number]
+  {
+    height: 40px;
+    border-radius: 12px;
+    width: 700px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: snow;
+    background-color: transparent;
+    border-color:  coral;
+  }
+  input[type=submit]
+  {
+      width: 150px;
+      margin-top: 20px;
+      height: 50px;
+      font-family: cambria;
+      margin-left: 20px;
+      border-radius: 10px;
+      border-color: coral;
+      color: lavender;
+      background-color: transparent;
+      padding: 7px;
+      font-size: 20px;
+      font-weight: bold;
+  }
+  input[type=reset]
+  {
+      width: 150px;
+      margin-top: 20px;
+      height: 50px;
+      font-family: cambria;
+      margin-left: 20px;
+      border-radius: 10px;
+      border-color: coral;
+      color: lavender;
+      background-color: transparent;
+      padding: 7px;
+      font-size: 20px;
+      font-weight: bold;
+  }
+  input[type=submit]:hover
+  {
+    background-color: coral;
+
+  }
+  input[type=reset]:hover
+  {
+    background-color: coral;
+    
+  }

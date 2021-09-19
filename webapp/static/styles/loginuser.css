@@ -1,0 +1,107 @@
+body
+  {
+    background-image: url(/static/styles/images/register.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+form
+{
+
+      width: 370px;
+      padding: 40px;
+      position: absolute;
+      top: 50%;
+      text-align: center;
+      border-color: blue;
+      border-radius: 10px;
+      border: 5px green;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background-color: rgba(0, 0, 0, .8);
+    
+}
+input[type=text]
+    {
+      width: 250px;
+      font-size: 18px;
+      font-weight: bold;
+      height: 40px;
+      border-color: lightsteelblue;
+      font-family: cambria;
+      border-radius: 20px;
+      color: lavender;
+      background-color: transparent;
+      transition: width 1s;
+      transition-timing-function: ease-in-out;
+    }
+ input[type=password]
+    {
+      width: 250px;
+      font-family: cambria;
+      height: 40px;
+      border-color: lightsteelblue;
+      font-weight: bold;
+      font-size: 18px;
+      border-radius: 20px;
+      color: lavender;
+      background-color: transparent;
+      transition: width 1s;
+      transition-timing-function: ease-in-out;
+    }
+    .g
+    {
+      width: 130px;
+      height: 40px;
+      border-radius: 10px;
+      border-color: lightseagreen;
+      color: lavender;
+      font-family: cambria;
+      background-color: transparent;
+      padding: 7px;
+      font-size: 15px;
+      font-weight: bold;
+    }
+ input[type=submit]
+    {
+      width: 130px;
+      height: 40px;
+      font-family: cambria;
+      border-radius: 10px;
+      border-color: lightseagreen;
+      color: lavender;
+      background-color: transparent;
+      padding: 7px;
+      font-size: 15px;
+      font-weight: bold;
+      
+    }
+    label
+    {
+       color: snow;
+       font-family: cambria;
+       font-weight: bold ;
+       font-size: 17px;
+    }
+ input[type=text]:hover
+   {
+    width: 290px;
+    border-color: coral;
+
+   }
+input[type=password]:hover
+{
+    width: 290px;
+    border-color: coral;
+}
+  input[type=submit]:hover
+   {
+    background-color: seagreen;
+    
+
+   }
+   .g:hover
+   {
+    background-color: seagreen;
+
+   }
