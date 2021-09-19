@@ -1,0 +1,53 @@
+{% load  static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="{% static 'styles/shipping.css' %}">
+  
+</head>
+<body>
+  <form method="POST" action="{% url 'shipping' %}">
+  {% csrf_token %}  
+  <div class="form">
+  <h1>Fill the Shipment Details</h1>
+  <br>
+  <br>
+  <label>Full name:</label><br>
+  <input type="text" name="Fullname">
+  <br>
+  <br>
+  <label>Location:</label>
+  <input type="text" name="Location">  
+  <br>
+  <br>
+  <label>Contact Number:</label>
+  <input type="number" name="Contactnumber">
+  <br>
+  <br>
+  <label>Email-ID:</label>
+  <input type="text" name="Emailid">  
+  <br>
+  <br>
+  <label>Shipping Adrress:</label>
+  <input type="text" name="Shippingaddress">
+  <br>
+  <br>
+  <label>Near by Landmark:</label>
+  <input type="text" name="Nearbylandmark">   
+  <br>
+  <br>
+  <br>
+  <input type="submit" name="submit" value="Order">
+  &nbsp;
+  &nbsp;
+  <input type="reset" name="reset" value="Cancel"> 
+
+  </div>
+</form>
+
+
+
+</body>
+</html>

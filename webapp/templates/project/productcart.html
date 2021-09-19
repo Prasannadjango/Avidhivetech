@@ -1,0 +1,512 @@
+{% load  static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'styles/productcart.css' %}">
+    
+</head>
+<body>
+    <h2 style="font-size:45px;text-align: center;">Products</h2>
+    <div class="container">
+        
+            <div class="articles">
+            <div>
+                <img src="media/dbimages/32inch redmi.jpg">
+                <br>
+                <br>
+                <div class="prod">
+                    <h3 class="tit" id="brand1">redmi 32-in</h3>
+                    &nbsp;
+                    <h4 id="price1">30000</h4>
+                    <h4>₹</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity1" name="quantity1" min="1" max="99" value="1">
+                    <select id="size1" name="size1" onclick="deleteE('message1')">
+                        <option value="size" disabled selected >Color</option>
+                        &nbsp;
+                        <option value="Black" >Black</option>
+                        <option value="Silver">Silver</option>
+
+                        
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(1)">Add to Cart</button>
+                    </div>
+                </div>
+                <p id="message1"></p>
+            </div>
+
+            <div>
+                <img src="media/dbimages/32inch redmi.jpg">
+                <br>
+                <br>
+                <div class="prod">
+                    <h3 class="tit" id="brand2">redmi 43-in</h3>
+                    &nbsp;
+                    <h4 id="price2">45000</h4>
+                    <h4>₹</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity2" name="quantity2" min="1" max="99" value="1">
+                    <select id="size2" name="size2" onclick="deleteE('message2')">
+                        <option value="size" disabled selected>Color:</option>
+                        <option value="Black">Black</option>
+                        <option value="Silver">Silver</option>
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(2)">Add to Cart</button>
+                    </div>
+                </div>
+                <p id="message2"></p>
+            </div>
+
+            <div>
+                <img  src="media/dbimages/amazon echo 3rd gen.jpg" style="height: 140px;">
+                <div class="prod">
+                    <h3 class="tit" id="brand3">Amazon echo</h3>
+                    <h4 id="price3">5000</h4>
+                    <h4>₹</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity3" name="quantity3" min="1" max="99" value="1">
+                    <select id="size3" name="size3" onclick="deleteE('message3')">
+                        <option value="size" disabled selected>Color</option>
+                        <option value="Black">Black</option>
+                        <option value="Silver">Silver</option>
+                        
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(3)">Add to Cart</button>
+                    </div>
+                </div>
+                <p id="message3"></p>
+            </div>
+
+            <div>
+                <img src="media/dbimages/amazon echo dot.jpg" style="height:140px;">
+                <div class="prod">
+                    <h3 class="tit" id="brand4">Amazon echodot</h3>
+                    <h4 id="price4">6000</h4>
+                    <h4>₹</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity4" name="quantity4" min="1" max="99" value="1">
+                    <select id="size4" name="size4" onclick="deleteE('message4')">
+                        <option value="size" disabled selected>Color</option>
+                        <option value="Black">Black</option>
+                        <option value="Silver">Silver</option>
+                        
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(4)">Add to Cart</button>
+                    </div>
+                </div>
+                <p id="message4"></p>
+            </div>
+            
+          
+            <div>
+                <img src="media/dbimages/amazon echo plus.jpg" style="height:140px;">
+                <div class="prod">
+                    <h3 class="tit" id="brand5">Amazon echo plus</h3>
+                    <h4 id="price5">6500</h4>
+                    <h4>₹</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity5" name="quantity5" min="1" max="99" value="1">
+                    <select id="size5" name="size5" onclick="deleteE('message5')">
+                        <option value="size" disabled selected>Color</option>
+                        <option value="Black">Black</option>
+                        <option value="Silver">Silver</option>
+                        
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(5)">Add to Cart</button>
+                    </div>
+                </div>
+                <p id="message5"></p>
+            </div>
+            
+
+             <div>
+                <img src="media/dbimages/redmi smartheater.jpg" style="height:140px;">
+                <div class="prod">
+                    <h3 class="tit" id="brand6">Redmi Smart roomheater</h3>
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    <h4 id="price6">8000</h4>
+                    <h4>₹</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity6" name="quantity6" min="1" max="99" value="1">
+                    <select id="size6" name="size6" onclick="deleteE('message6')">
+                        <option value="size" disabled selected>Color</option>
+                        <option value="Black">Black</option>
+                        <option value="Silver">White</option>
+                        
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(6)">Add to Cart</button>
+                    </div>
+                </div>
+                <p id="message6"></p>
+            </div>
+           
+
+            <div>
+                <img src="media/dbimages/redmi smart vaccum.jpg" style="height:140px;">
+                <div class="prod">
+                    <h3 class="tit" id="brand7">Redmi cleaner robot</h3>
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    <h4 id="price7">20000</h4>
+                    <h4>₹</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity7" name="quantity7" min="1" max="99" value="1">
+                    <select id="size7" name="size7" onclick="deleteE('message7')">
+                        <option value="size" disabled selected>Color</option>
+                        <option value="Black">Black</option>
+                        <option value="Silver">White</option>
+                        
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(7)">Add to Cart</button>
+                    </div>
+                </div>
+                <p id="message7"></p>
+            </div>
+           
+
+
+           <div>
+                <img src="media/dbimages/redmi smart band.jpg" style="height:140px;">
+                <div class="prod">
+                    <h3 class="tit" id="brand8">Redmi smart band</h3>
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    <h4 id="price8">3000</h4>
+                    <h4>₹</h4>
+
+                </div>
+                <br>
+
+                <div class="inputs">
+                    <input type="number" id="quantity8" name="quantity8" min="1" max="99" value="1">
+                    <select id="size8" name="size8" onclick="deleteE('message8')">
+                        <option value="size" disabled selected>Color</option>
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Red">Red</option>
+                        <option value="Blue">Blue</option>
+                        
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(8)">Add to Cart</button>
+                    </div>
+                </div>
+                <p id="message8"></p>
+            </div>
+
+          <div>
+                <img src="media/dbimages/redmi washingmachine.jpg" style="height:140px;">
+                <div class="prod">
+                    <h3 class="tit" id="brand9">Redmi smart Washingmachine(10KG)</h3>
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    <h4 id="price9">30000</h4>
+                    <h4>₹</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity9" name="quantity9" min="1" max="99" value="1">
+                    <select id="size9" name="size9" onclick="deleteE('message9')">
+                        <option value="size" disabled selected>Color</option>
+                        <option value="Black">Black</option>
+                        <option value="Silver">White</option>
+                        
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(9)">Add to Cart</button>
+                    </div>
+                </div>
+                <p id="message9"></p>
+            </div>
+           
+
+           <div>
+                <img src="media/dbimages/redmi washingmachine.jpg" style="height:140px;">
+                <div class="prod">
+                    <h3 class="tit" id="brand10">Redmi smart Washingmachine(4kg) </h3>
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    <h4 id="price10">20000</h4>
+                    <h4>₹</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity10" name="quantity10" min="1" max="99" value="1">
+                    <select id="size10" name="size10" onclick="deleteE('message10')">
+                        <option value="size" disabled selected>Color</option>
+                        <option value="Black">Black</option>
+                        <option value="Silver">White</option>
+                        
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(10)">Add to Cart</button>
+                    </div>
+                </div>
+                <p id="message10"></p>
+            </div>
+
+
+            <div>
+                <img src="media/dbimages/redmi washingmachine.jpg" style="height:140px;">
+                <div class="prod">
+                    <h3 class="tit" id="brand11">Redmi smart Washingmachine(6kg) </h3>
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    <h4 id="price11">25000</h4>
+                    <h4>₹</h4>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="quantity11" name="quantity11" min="1" max="99" value="1">
+                    <select id="size11" name="size11" onclick="deleteE('message11')">
+                        <option value="size" disabled selected>Color</option>
+                        <option value="Black">Black</option>
+                        <option value="Silver">White</option>
+                        
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(11)">Add to Cart</button>
+                    </div>
+                </div>
+                <p id="message11"></p>
+            </div>
+
+
+            <div>
+                <img src="media/dbimages/smart juicer.jpg" style="height:140px;">
+                <div class="prod">
+                    <h3 class="tit" id="brand12">Smart Juicemaker</h3>
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    <h4 id="price12">5000</h4>
+                    <h4>₹</h4>
+                </div>
+                <div class="inputs">
+                    <br>
+
+                    <input type="number" id="quantity12" name="quantity12" min="1" max="99" value="1">
+                    <select id="size12" name="size12" onclick="deleteE('message12')">
+                        <option value="size" disabled selected>Color</option>
+                        <option value="Black">Black</option>
+                        <option value="Silver">White</option>
+                        
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(12)">Add to Cart</button>
+                    </div>
+                </div>
+                <p id="message12"></p>
+            </div>
+
+
+            <div>
+                <img src="media/dbimages/havells smartfan.jpg" style="height:140px;">
+                <div class="prod">
+                    <h3 class="tit" id="brand13">Smart Fan </h3>
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    <h4 id="price13">7000</h4>
+                    <h4>₹</h4>
+                </div>
+                <div class="inputs">
+                    <br>
+                    <br>
+                    <input type="number" id="quantity13" name="quantity13" min="1" max="99" value="1">
+                    <select id="size13" name="size13" onclick="deleteE('message13')">
+                        <option value="size" disabled selected>Color</option>
+                        <option value="Black">Black</option>
+                        <option value="Silver">White</option>
+                        <option value="Brown">Brown</option>
+                        
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(13)">Add to Cart</button>
+                    </div>
+                </div>
+                <p id="message13"></p>
+            </div>
+
+            <div>
+                <img src="media/dbimages/wipro white 9w.jpg" style="height:140px;">
+                <div class="prod">
+                    <h3 class="tit" id="brand14">Wipro 9w LED lamp </h3>
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    <h4 id="price14">500</h4>
+                    <h4>₹</h4>
+                </div>
+                <div class="inputs">
+                    <br>
+                    
+                    <input type="number" id="quantity14" name="quantity14" min="1" max="99" value="1">
+                    <select id="size14" name="size14" onclick="deleteE('message14')">
+                        <option value="size" disabled selected>Color</option>
+                        
+                        <option value="Silver">White</option>
+                        
+                        
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(14)">Add to Cart</button>
+                    </div>
+                </div>
+                <p id="message14"></p>
+            </div>
+
+
+            <div>
+                <img src="media/dbimages/philipstwinglow20w.jpg" style="height:140px;">
+                <div class="prod">
+                    <h3 class="tit" id="brand15">philips 10 W LED lamp</h3>
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                    <h4 id="price15">500</h4>
+                    <h4>₹</h4>
+                </div>
+                <div class="inputs">
+                    
+                    
+                    <input type="number" id="quantity15" name="quantity15" min="1" max="99" value="1">
+                    <select id="size15" name="size15" onclick="deleteE('message15')">
+                        <option value="size" disabled selected>Color</option>
+                        
+                        <option value="Silver">White</option>
+                        
+                        
+                    </select>
+                    <div>
+                        <button class="addTo" onclick="add(15)">Add to Cart</button>
+                    </div>
+                </div>
+                <p id="message15"></p>
+            </div>
+
+
+
+              
+
+
+  
+
+        </div>
+        <div>
+
+   <hr>         
+
+ <div class="cart">
+            <h3 class="tit">My Cart</h3>
+
+            <!-- list of the articles in the cart -->
+            <ol id="items" >
+            </ol> 
+            <hr style="width: 200px; float: right;">
+            <br>
+            <h3 id="total" style="text-align: right;">Total: 0 ₹</h3> 
+            <a href="http://127.0.0.1:8000/shipping"><button class="d">check & Order</button></a>
+
+            
+           
+        </div>
+    </div>
+
+
+        
+    <script>
+        
+        
+        var total = 0;
+        var i = 1;
+        var message = "Please select a size";
+        var itemCost = [];
+
+        
+        function add(n){
+            
+            sizeId = "size" + n;
+            
+            messageId = "message" + n;
+           
+            size = document.getElementById(sizeId).value;
+            
+            if (size==="size"){
+                document.getElementById(messageId).innerHTML = message;
+                return 0;
+            }
+            
+            brand = "brand" + n;
+            priceId = "price" + n;
+            quantityId = "quantity" + n;
+            
+            name = document.getElementById(brand).innerHTML;
+            
+            price = document.getElementById(priceId).innerHTML;
+            
+            quantity = document.getElementById(quantityId).value;
+            
+            var node = document.createElement("LI");
+            
+            item = "item"+i;
+            node.setAttribute("id", item)
+           
+            itemCost[i-1] = Number(price) * Number(quantity);
+            
+            i += 1;
+            
+            var textnode = document.createTextNode(name+" "+quantity+" x "+price+" ₹, Color: "+ size);
+            
+            node.appendChild(textnode);
+           
+            document.getElementById("items").appendChild(node);
+
+            total += Number(price) * Number(quantity);
+            
+            document.getElementById("total").innerHTML = "Total: " + total.toFixed(2) + " ₹";
+            
+            
+            document.getElementById(item).innerHTML += '<button  class="e" onclick="deleItem('+"'"+item+"'"+')">remove</button>';
+           
+        }
+
+        
+         function deleteE(eId) {
+            document.getElementById(eId).innerHTML = ' ';
+        }
+
+        
+        function deleItem(eId){
+            document.getElementById(eId).remove();
+            
+            n = Number(eId.slice(-1)) - 1;
+            
+            total -= itemCost[n];
+            
+            document.getElementById("total").innerHTML = "Total: " + total.toFixed(2) + " ₹"; 
+        }
+    </script>
+</body>
+</html>

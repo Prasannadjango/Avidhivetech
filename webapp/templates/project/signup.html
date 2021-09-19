@@ -1,0 +1,53 @@
+{% load  static %}
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="{% static 'styles/sign.css' %}">
+ 
+</head>
+<body>
+  <form method="POST" action="{% url 'signup' %}">
+    <h1>Register here</h1>
+    {% csrf_token %}
+    <label>Enter your name</label>
+    <br>
+    <br>
+    <input type="text" name="Name" >
+    <br>
+    <br>
+    <label>Enter your Mail</label>
+    <br>
+    <br>
+    <input type="text" name="Mailid">
+    <br>
+    <br>
+    <label>Enter the Contactnumber</label>
+    <br>
+    <br>
+    <input type="number" name="Contactnumber">
+    <br>
+    <br>
+    <label>Enter the Location</label>
+    <br>
+    <br>
+    <input type="text" name="Location">
+    <br>
+    <br>
+    <br>
+    <br>
+    <input type="submit" value="Register" name="signin" >
+    &nbsp;
+    &nbsp;
+    <input type="reset" value="Cancel" name="reset"> 
+    <br>
+    <br>
+
+    
+
+    
+  </form>
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+
+{% load  static %}
+
+<html>  
+<head> 
+<meta charset="utf-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+ <link rel="stylesheet" href="{% static 'styles/account.css' %}">
+</head>
+ 
+
+  
+<body>  
+<form method="POST"  action="{% url 'account' %}" class="b"> 
+  <div>
+  <div class="container">
+    <h2 >Create New account</h2>
+  </div>
+  {% csrf_token %}
+
+  {{ form }}
+
+  <br>
+  <br>
+<input type="submit" name="submit"  class="a">
+&nbsp;
+&nbsp;
+<input type="reset" name="reset" value="Cancel" class="a">
+</div>
+
+</body>  
+</html>  
+
+
